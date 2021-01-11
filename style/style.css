@@ -1,0 +1,137 @@
+:root{
+    --bgColor: #07070D;
+    --textLight: #FFFFFF;
+    --textBlue: #3FA69B;
+}
+
+@keyframes slide{
+    from{
+        color: var(--textLight);
+    }
+    to{
+        color: var(--textBlue);
+    }
+}
+
+a{
+  text-decoration: none;
+}
+
+.initial-msg{
+    color: var(--textLight);
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.name{
+    color: var(--textLight);
+    font-size: 72px;
+    font-family: "Poppins", sans-serif;
+    margin: 0 0 0 0;
+}
+
+.role{
+    color: var(--textLight);
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    margin: 0 0 0 0;
+}
+
+.highlight{
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.last-msg{
+    color: var(--textLight);
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    margin: 0 0 0 0;
+    animation-delay: 6s;
+}
+
+.topo{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    width: 40%;
+    height: 100px;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+.tag{
+    color: var(--textBlue);
+}
+
+.logo-text{
+    font-size: 20px;;
+    font-family: "Ubuntu", "sans serif";
+    color: var(--textLight);
+}
+
+.logo-text{
+    align-content: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.menu-struct{
+    width: 60%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+.menu-item{
+    top: 0;
+    height: 100px;
+    width: 25%;
+}
+
+.menu-item:hover{
+    background-color: var(--textBlue);
+    transition-duration: 2s;
+}
+
+.link-item{
+    text-decoration: none;
+    color: var(--textLight);
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    margin-top: 20%;
+}
+
+.apresentacao{
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    height: 500px;
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: row;
+}
+
+.apresentacao-struct{
+    margin-left: 10%;
+    margin-top: 8%;
+    width: 70%;
+    height: 500px;
+}
